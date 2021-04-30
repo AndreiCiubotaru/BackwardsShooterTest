@@ -1,0 +1,19 @@
+All configuration files are in each level folder labeled ConfigurationFiles
+
+Configuration files can be created using right-click -> Create -> Test menu
+Options (bullet points refer to names that are not self-explanatory:
+	PlayerConfig
+		- Strafe speed refers to the side to side speed
+		- Check target cooldown referes to the delay between obtaining new targets (if a new enemy becomes first enemy this is the maximum amount of time before it is targeted). 0 means each frame
+	ObstacleConfig
+		- The Affected tags are the only tags on which slow will be applied
+	WaveConfig 
+		- Delay refers to the time before the wave starts (in adition to enemy spawn delays)
+	EnemyConfig 
+		- DirectionChangeCheckTime refers to the delay between checking the target position and realiging (0 means every frame);
+	RunningLevelConfing	
+		- Track refers to the path which the player/enemies are on
+		- Camera sides exclusion refers to the border (width only) which the camera will zoom past (0 means the player as well as the last enemy are in vision)
+		- Horizontal distance referes to the left/right of the track
+	SceneInfo
+		- SceneName - the name of the scenes that can be loaded (other than menu scene)

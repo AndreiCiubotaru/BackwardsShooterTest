@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63c61d0ab78b3f0468703f9f2ae9c688, type: 3}
+  m_Name: RunningLevelConfig1
+  m_EditorClassIdentifier: 
+  LenghtOfTrack: 40
+  WidthOfTrack: 5
+  PlayerStartDistanceFromEnemies: 10
+  CameraSidesExclusion: 0
+  CameraMovementSpeedMultiplier: 1
+  WaveCount: 1
+  Waves:
+  - Item: {fileID: 11400000, guid: 39a05e3c1b393594cacc01fdab694100, type: 2}
+    Chance: 1
+  EnemySpawningHorizontalDifference: 2
+  EnemiesToKillToWin: 10
+  Obstacles:
+  - Item: {fileID: 11400000, guid: 24b880b1a4605264f82fb46c9f9d03b5, type: 2}
+    Chance: 3
+  - Item: {fileID: 11400000, guid: 9af6754f47ed8c749b16bae972349912, type: 2}
+    Chance: 2
+  - Item: {fileID: 0}
+    Chance: 2
+  MinTimeBetweenObstacles: 2
+  MaxTimeBetweenObstacles: 3

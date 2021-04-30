@@ -1,0 +1,31 @@
+GameManager the singlton controller of the application, handles the initialization/teardown of scene controllers
+
+SceneController base class for any level
+	- Menu Controller - handles the setup of the menu
+	- Running Controller -  handles the setup and runtime usages of the first level
+
+Config Classes are scriptable objects used for editing various parameters
+	- HealthBasedConfig - contains the base of any health based entities
+		-PlayerConfig - contains the extra inforamtion required for the player setup and runtime
+		-EnemyConfig  - contains the extra information required for the enemy setup and runtime
+	- WaveConfig - contains the information required for wave formation and cycling
+	- ObstacleConfig - contains the information required for obstacle setup and runtime
+	- SceneInfo - contains the names of the levels to be played;
+
+BaseMovement - base class for any entities that require movement
+	- PlayerMovement - aditionally contains structure required for user control
+	- EnemyMovement - aditionally contains structure required for following the target
+	- BaseProjectile - aditionally contains structure required for projectile hit / lifetime expiration
+
+Player shooting - contains structure required for aiming and launching projectiles at enemies
+
+HealthBasedController - generic class (based on config file type) for entities with health, handling base initialization and teardown as well as health management
+	- EnemyController - also contains base enemy behaviour & initialization/teardown
+	- PlayerController - also contains base player initialization/teardown
+
+
+Utility<T> used in order to obtain utilty information for various Types of classes
+	ItemWithRandom & GetRandomFromList used in order to generalize random chances
+	EnemyTag/PlayerTag right now could be moved into outside classes but further work could eliminate the need for the enemy/player prefix
+	GetClosest/FarthestEnemtFromList will return enemies from list, straying from rules as more work into generics setup would be required to remove the predefined types
+	EstimateSquareRoot used for faster but less accurate data

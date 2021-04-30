@@ -1,0 +1,38 @@
+# ===================================== #
+# Unity generated #
+# ===================================== #
+Library/
+Temp/
+
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+[Ee]xported[Oo]bj/
+obj/
+*.svd
+*.userprefs
+/*.csproj
+*.pidb
+*.suo
+/*.sln*
+*.user
+*.unityproj
+*.booproj	
+
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store*
+._*
+.Spotlight-V100
+.Trashes
+.idea/
+.vs/
+ehthumbs.db
+[Tt]humbs.db
+
+# =============== #
+# Override global #
+# =============== #
+!*.obj
+!*.dll
