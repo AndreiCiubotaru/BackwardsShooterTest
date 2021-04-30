@@ -19,18 +19,6 @@ obj/
 *.unityproj
 *.booproj	
 
-# ============ #
-# OS generated #
-# ============ #
-.DS_Store*
-._*
-.Spotlight-V100
-.Trashes
-.idea/
-.vs/
-ehthumbs.db
-[Tt]humbs.db
-
 # =============== #
 # Override global #
 # =============== #
